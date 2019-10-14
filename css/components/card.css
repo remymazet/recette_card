@@ -1,5 +1,9 @@
+body{
+	font-family: 'Fira Sans', sans-serif;
+	background-color: #ededed
+}
 .card{
-	height: 650px;
+	
 	width: 520px;
 	background-color: white;
 	margin: auto;
@@ -7,6 +11,69 @@
 	margin-top: 30px;
 	padding: 30px;
 }
-.products-img img{
-	height: 230px;
+.product-icon{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.fa-heart {
+	font-size: 25px;
+    color: #d48cbb;
+}
+.fa-heart:hover{
+	color: #a15c89;
+}
+.fa-star{
+	color: #d6c318;
+}
+.product{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 100%
+}
+.product-button{
+    height: 28px;
+    padding: 15px;
+    background-color: #ebbd34;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: white;
+    border-radius: 5px;
+}
+.product-video{
+	margin: 25px 0;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr;
+}
+.product-images{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 30px;
+	max-width: 100%;
+}
+.product-images img{
+	width: 100%;
+	height: 100px;
+	
+}
+@media (max-width: 620px) {
+	.product{
+		grid-template-columns: 1fr;
+	}
+	.card{
+		width: auto;
+	}
+	.product{
+		text-align: center;
+	}
+}
+@media (max-width: 570px) {
+	.product-images{
+		grid-template-columns: 1fr;
+	}
+	.product-images img{
+		width: 100%;
+		height: 100%;
+	}
 }
