@@ -1,6 +1,10 @@
 body{
 	font-family: 'Fira Sans', sans-serif;
-	background-color: #ededed
+	background-color: #ededed;
+	background-image: url(../../img/bg.jpg);
+	background-size: cover;
+	width: 100%
+	height: 100vh;
 }
 .card{
 	
@@ -8,7 +12,7 @@ body{
 	background-color: white;
 	margin: auto;
 	box-shadow: 0px 0px 29px -13px rgba(0,0,0,0.75);
-	margin-top: 30px;
+	margin: 60px auto;
 	padding: 30px;
 }
 .product-icon{
@@ -39,6 +43,12 @@ body{
     display: flex;
     color: white;
     border-radius: 5px;
+    text-decoration: none;
+    transition: transform .2s;
+}
+.product-button:hover{
+	background-color: #d1a72a;
+	transform: scale(1.1);
 }
 .product-video{
 	margin: 25px 0;
@@ -56,6 +66,12 @@ body{
 	width: 100%;
 	height: 100px;
 	
+}
+.more-product{
+	transition: transform .2s;
+}
+.more-product:hover{
+	transform: scale(1.1);
 }
 @media (max-width: 620px) {
 	.product{
